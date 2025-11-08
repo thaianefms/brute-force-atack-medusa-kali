@@ -1,6 +1,6 @@
-# brute-force-atack-medusa-kali
+# Desafio de Projeto #1 do curso da DIO Santander Cibersegurança 2025
 
-Simulação de um ataque de brute force com medusa
+## Simulação de um ataque de brute force com medusa
 
 O desafio consistiu em implementar, documentar e compartilhar um projeto prático utilizando Kali Linux e a ferramenta Medusa, em conjunto com ambientes vulneráveis (por exemplo, Metasploitable 2 e DVWA), para simular cenários de ataque de força bruta e exercitar medidas de prevenção.
 
