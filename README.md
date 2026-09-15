@@ -1,17 +1,30 @@
 # Desafio de Projeto #1 do curso da DIO Santander Cibersegurança 2025
 
-## Simulação de um ataque de brute force com medusa
+## Brute Force Attack Simulation with Medusa (Kali Linux)
 
-O desafio consistiu em implementar, documentar e compartilhar um projeto prático utilizando Kali Linux e a ferramenta Medusa, em conjunto com ambientes vulneráveis (por exemplo, Metasploitable 2 e DVWA), para simular cenários de ataque de força bruta e exercitar medidas de prevenção.
+Este repositório documenta o processo de simulação de um ataque de força bruta utilizando a ferramenta **Medusa** em um ambiente controlado no **Kali Linux**, realizado em outubro de 2025. O objetivo deste material é puramente educacional e focado em testes de segurança defensiva e análise de vulnerabilidades em serviços de rede.
 
-Os passos seguidos foram:
-1. Preparar o ambiente com Kali Linux e MetaSploitable 2;
-2. Alcançar a máquina vulnerável no MetaSploitable 2;
-3. Cria nomes de usuários e senhas comuns em diferentes arquivos;
-4. Ataque de força bruta aplicados em formulários de login em sistemas web;
-5. Criação de wordlists;
-6. Utilizando o Medusa para simular combinações entre usuários e senhas;
-7. Ataque em cadeia, enumeração smb + password spraying;
-8. Simulação de um cenário comum em ambiente corporativo mal configurado;
-9. Criando lista de usuários;
-10. Testando o acesso utilizando smbclient.
+---
+
+## 🛠️ Tecnologias e Ferramentas Utilizadas
+* **Sistema Operacional:** Kali Linux
+* **Ferramenta de Teste:** Medusa (Brute Force Credential Testing)
+* **Documentação:** Capturas de tela e logs de execução
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+├── README.md                                   # Documentação principal do repositório
+└── brute-force-atack-medusa-kali-.../          # Diretório contendo evidências e capturas
+    ├── Screenshot_2025-10-24_13_09_52.png      # Configuração inicial / Alvo
+    ├── Screenshot_2025-10-24_13_16_30.png      # Execução do ataque (Medusa)
+    ├── Screenshot_2025-10-24_13_18_48.png      # Carregamento de wordlists
+    ├── Screenshot_2025-10-24_13_28_29.png      # Parâmetros de conexões simultâneas
+    ├── Screenshot_2025-10-24_13_30_19.png      # Monitoramento de tráfego/respostas
+    ├── Screenshot_2025-10-24_13_31_05.png      # Tentativas de autenticação
+    ├── Screenshot_2025-10-24_13_35_12.png      # Validação de credenciais
+    ├── Screenshot_2025-10-24_13_37_12.png      # Resultados parciais
+    ├── Screenshot_2025-10-24_13_44_40.png      # Identificação de credencial válida (Match)
+    └── Screenshot_2025-10-24_13_47_47.png      # Relatório final e encerramento
