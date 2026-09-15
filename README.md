@@ -28,3 +28,29 @@ Este repositório documenta o processo de simulação de um ataque de força bru
     ├── Screenshot_2025-10-24_13_37_12.png      # Resultados parciais
     ├── Screenshot_2025-10-24_13_44_40.png      # Identificação de credencial válida (Match)
     └── Screenshot_2025-10-24_13_47_47.png      # Relatório final e encerramento
+```
+
+### 🔍 Sobre a Simulação
+O projeto demonstra a eficiência de ataques de força bruta baseados em dicionário (wordlists) contra serviços de autenticação de rede. O Medusa foi selecionado devido à sua alta velocidade e suporte a conexões paralelas via threads, permitindo testar múltiplos pares de usuário e senha de forma simultânea.
+
+**Principais Fases Registradas nas Evidências:**
+* **Mapeamento do Alvo:** Identificação do serviço exposto e portas ativas.
+* **Definição de Dicionários:** Configuração de listas de usuários e senhas potenciais.
+* **Execução Paralela:** Disparo das requisições de login via Medusa otimizando o uso de threads.
+* **Análise de Resposta:** Identificação de falsos positivos e captura bem-sucedida de credenciais válidas.
+
+---
+
+### 🛡️ Considerações de Segurança & Mitigação
+Ataques de força bruta representam riscos críticos para sistemas expostos à internet. Algumas das principais práticas de mitigação incluem:
+
+* **Políticas de Senhas Fortes:** Exigir senhas complexas e longas para mitigar a eficácia de ataques de dicionário.
+* **Limitação de Tentativas (Rate Limiting):** Bloquear temporariamente endereços IP após um número excedente de falhas consecutivas de login.
+* **Autenticação Multifator (MFA):** Adicionar uma camada extra de segurança que impede o acesso mesmo em caso de comprometimento da senha única.
+* **Uso de Soluções de Monitoramento (IDS/IPS):** Detectar picos anômalos de requisições de autenticação na rede.
+
+---
+
+### ⚠️ Aviso Legal (Disclaimer)
+> Este material foi desenvolvido estritamente para fins educacionais e de pesquisa em segurança da informação. A execução de ataques de força bruta contra sistemas sem a autorização prévia e explícita do proprietário é ilegal e antiética. O autor não se responsabiliza pelo uso indevido destas informações.
+
